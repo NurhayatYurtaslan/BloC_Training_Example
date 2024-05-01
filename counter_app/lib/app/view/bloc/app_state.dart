@@ -1,8 +1,8 @@
 part of 'app_bloc.dart';
 
-sealed class CounterAppState {}
+abstract class CounterAppState {}
 
-final class CounterInital extends CounterAppState {}
+final class CounterInitial extends CounterAppState {}
 
 final class CounterChanged extends CounterAppState {
   final int counterValue;
